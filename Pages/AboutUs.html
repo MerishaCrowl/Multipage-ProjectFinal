@@ -1,0 +1,94 @@
+<!DOCTYPE html><!--Tell VS what kind of html you are coding-->
+<html lang="en"><!--Open html tag to create an html page and set lang property-->
+	<head>
+    	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"><!--Open the head tag-->
+        <!--Add meta tag to set the viewport of page (Must be first after head tag), which will give the browser instructions on how to control the page's dimensions and scaling.-->
+
+		<title class="title">About Us</title><!--Add a title tag to title the page and add class title-->
+
+		<link rel="stylesheet" type="text/css" href="/Assets/Stylesheets/AboutUs.css"><!--Link stylesheet to html page-->
+
+	</head><!--Close the head tag-->
+
+	<body><!--Open the body tag, only 1 body tag per page-->
+
+		<div class="masthead">
+			<header><!--Add an open header tag to create a header-->
+
+        		<a href="#" class="logo">Logo</a><!--Add an A tag and class of logo to insert logo field and stylize-->
+
+				<nav><!--Add a nav bar to your header-->
+
+        				<!--<a href="#" title="menu-icon" class="menu-icon"></a>Add an A tag and class menu-icon-->
+            		<ul><!--Create an unnumbered list to create a masthead-->
+						<li><a href="TEST.html" class="navbutton">HOME</a></li><!--Add a list item to link Home page to TEST.html, label Home, and create class of navbar-->
+						<li><a href="Portfolio.html" class="navbutton">PORTFOLIO</a></li><!--Add a list item to link Portfolio page to portfolio.html, label Portfolio, and create class of navbar-->
+						<li><a href="ContactUs.html" class="navbutton">CONTACT</a></li><!--Add a list item to link Contact page to ContactUs.html, label Contact, and create class of navbar-->
+						<li><a href="AboutUs.html" class="navbutton">ABOUT US</a></li><!--Add a list item to link About Us page to AboutUs.html, label About Us, and create class of navbar-->
+					</ul><!--Close unnumbered list tag-->
+        		</nav><!--Close nav bar tag-->
+
+				<div class="search-bar"><!--Create a div to insert a search function and give it a class for styling-->
+					<form><!--Create a form to insert search input and submit button-->
+						<input type="text" placeholder="Search..."><!--Create an input for search feature-->
+						<button class="searchsubmit" title="Find It" type="submit"></button><!--Add a submit button for search request-->
+					</form><!--Close form tag-->
+				</div><!--Close div tag-->
+
+        		<div class="SignInandShoppingCart"><!--Create a div to insert third part of masthead-->
+            		<nav2><!--Create another nav bar-->
+                	<ul><!--Add an unnumbered list to nav bar-->
+                    	<li><a href="Login.html" class="navsidelink">SIGN IN / DEALER LOCATOR</a></li><!--Add a list item of a link to login page, with an id, and Label is Sign In-->
+                    	<li><a href="Shophere.html" class="navsidelink">VIEW CART<img title="shoppingcart" src="Assets/Images/shopping-cart-icon_new.svg"></a></li><!--Add a list item of a link to Shopping Cart, with an id, and Label it View Cart-->
+                	</ul><!--Close unnumbered list tag-->
+            		</nav2><!--Close second nav bar tag-->
+        		</div><!--Close div tag-->
+		
+			</header><!--Close header tag-->
+		</div><!--div close tag for header container class "masthead"-->
+
+		<div class="maincontent"><!--Add a div tag with a class of maincontent to style main section-->
+			<main><!--Open main content tag to insert main page content--><!-- Main content goes here -->
+                <!--Page Title-->	
+				<div class="pagetitlecontainer"><!--Add a div tag with a class of pagetitlecontainer to create a container for flex box containing page title-->
+					<div class="pagetitlebox"><!--Add a div tag with a class of pagetitlebox to hold Page Title-->
+        				
+						<h1 class="pagetitle">About Us</h1><!--Add an h1 and name page to present title to viewers-->
+					
+					</div><!--Close div tag class pagetitlebox-->
+				</div><!--Close div tag class pagetitlecontainer-->	
+            </main><!--Close main content tag-->
+		</div><!--Close div tag with class maincontent-->
+        <div class="mastfoot"></div>
+				<footer><!--Open footer tag to create a footer-->
+        				<!-- Footer content goes here -->
+					<a href="#" class="logo">Logo</a><!--Add an A tag and id logo WHY?-->
+
+        			<nav><!--open 3rd nav bar tag to add masthead to footer-->
+							<!--<a href="#" id="menu-icon"></a>--><!--Add an A tag and id menu-icon-->
+            			<ul><!--Create an unnumbered list for nav bar in footer-->
+							<li><a href="TEST.html" class="navbutton">HOME</a></li><!--Add a list item to link Home page to TEST.html, label Home, and create class of navbar-->
+							<li><a href="Portfolio.html" class="navbutton">PORTFOLIO</a></li><!--Add a list item to link Portfolio page to portfolio.html, label Portfolio, and create class of navbar-->
+							<li><a href="ContactUs.html" class="navbutton">CONTACT</a></li><!--Add a list item to link Contact page to ContactUs.html, label Contact, and create class of navbar-->
+							<li><a href="AboutUs.html" class="navbutton">ABOUT ME</a></li><!--Add a list item to link About Us page to AboutUs.html, label About Us, and create class of navbar-->
+						</ul><!--Close unnumbered list tag-->
+        			</nav><!--Close navbar tag-->
+
+					<div class="search-bar"><!--Create a div to insert a search function and give it a class for styling-->
+						<form><!--Create a form to insert search input and submit button-->
+
+							<input type="text" placeholder="Search..."><!--Create an input for search feature-->
+
+							<button class="searchsubmit" title="Find It" type="submit"></button><!--Add a submit button for search request-->
+
+						</form><!--Close form tag-->
+					</div><!--Close div tag-->
+
+        				<p class="copyright">&copy; 2023 My Website</p><!--Add an open and closed paragraph tag to insert copyright to footer of page-->
+    
+				</footer><!--Close footer tag-->
+			</div><!--Close mastfoot div tag-->
+
+
+	</body><!--Close body tag-->
+</html><!--Close html tag-->

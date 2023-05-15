@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bouncing Button</title>
+	<style>
+		.button {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border-radius: 5px;
+			text-align: center;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+			animation: bounce 0.5s ease-in-out infinite alternate;
+			cursor: pointer;
+		}
+		
+		/* Define the bounce animation */
+		@keyframes bounce {
+			from {transform: translateY(0);}
+			to {transform: translateY(-10px);}
+		}
+		
+		/* Change the button color on hover */
+		.button:hover {
+			background-color: #0056b3;
+		}
+	</style>
+</head>
+<body>
+	<!-- Create a button that links to an external page -->
+	<a href="https://www.example.com" target="_blank" class="button">Click me!</a>
+</body>
+</html>

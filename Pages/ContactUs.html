@@ -1,0 +1,109 @@
+<!DOCTYPE html><!--Beginning of Opening Code with Masthead--><!--Tell VS what kind of html you are coding-->
+<html lang="en"><!--Open html tag to create an html page and set lang property-->
+	<head><!--Open the head tag-->
+    	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Add meta tag to set the viewport of page (Must be first after head tag), which will give the browser instructions on how to control the page's dimensions and scaling.-->
+    
+        <title>Contact Us</title>
+    <link rel="stylesheet" href="/Assets/Stylesheets/ContactUs.css">
+  </head>
+  <body>
+        <header>
+
+            <nav>
+                <ul>
+                    <li><a href="#" class="logo">Logo</a></li>
+                    <li><a href="Indextest.html" class="navbutton">HOME</a></li>
+                    <li><a href="Portfolio.html" class="navbutton">PORTFOLIO</a></li>
+                    <li><a href="ContactUs.html" class="navbutton">CONTACT</a></li>
+                    <li><a href="AboutUs.html" class="navbutton">ABOUT ME</a></li>
+                </ul>
+            </nav>
+    
+            <div class="search-bar">
+                <form>
+                    <input type="text" placeholder="Search...">
+                    <button class="searchsubmit" title="Find It" type="submit"></button><!--Add a submit button for search request-->
+                </form>
+            </div>
+    
+            <div>
+                <nav2>
+                    <ul>
+                        <li><a href="Login.html" class="navsidelink">SIGN IN / DEALER LOCATOR</a></li>
+                        <li><a href="Shophere.html" class="navsidelink">VIEW CART<img src="Assets/Images/shopping-cart-icon_new.svg" alt="Shopping Cart Icon"></a></li>
+                    </ul>
+                </nav2>
+            </div>
+    
+        </header>
+    <main>
+        <h1>Contact Us</h1>
+
+    <form action="#" method="post"><!--Select your subject, Contact Us, Form-->
+
+        <div><!--Create container-->
+            <div class="flex"><!--Make container a flex box-->
+
+                <label for="subject">Subject:</label><!--Create Dropdown and customize-->
+                <select name="sub" id="subject" required size="4">
+
+                    <option value="">--Please choose an option--</option>
+                    <option value="techsupport">Tech Support</option>
+                    <option value="billing">Billing Question</option>
+                    <option value="refund">Refund / Exchange Request</option>
+                    <option value="review">Leave a Review</option>
+                    <option value="unsubscribe">Request to Unsubscribe</option>
+                    <option value="other">None of the above, but I need assistance.</option>
+
+                </select>
+            </div>
+        </div>
+
+        <div><!--Create container for Comment Input-->
+            <div class="flex"><!--Make container a flex box-->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+        </div><br>
+   
+        <div><!--Create container for Name Input-->
+            <div class="flex"><!--Make container a flex box-->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+        </div><br>
+
+        <div><!--Create container for Email Input-->
+            <div class="flex"><!--Make container a flex box-->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div><br>
+        
+            <button class="flex" type="submit">Submit</button><!--Create submit button-->
+    </form>
+    </main>
+        <footer><!--Add footer masthead to page-->
+            <nav>
+                <ul>
+                    <li><a href="#" class="logo">Logo</a></li>
+                    <li><a href="Indextest.html" class="navbutton">HOME</a></li>
+                    <li><a href="Portfolio.html" class="navbutton">PORTFOLIO</a></li>
+                    <li><a href="ContactUs.html" class="navbutton">CONTACT</a></li>
+                    <li><a href="AboutUs.html" class="navbutton">ABOUT US</a></li>
+                </ul>
+            </nav>
+    
+            <div class="search-bar">
+                <form>
+                    <input type="text" placeholder="Search...">
+                    <button class="searchsubmit" title="Find It" type="submit"></button><!--Add a submit button for search request-->
+                </form>
+            </div>
+    
+            <p class="copyright">&copy; 2023 My Website</p>
+        </footer>
+  </body>
+</html>

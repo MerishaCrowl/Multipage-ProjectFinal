@@ -1,0 +1,639 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+    text-align: center;
+}
+
+/*General Styling Here*/
+
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+head {
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.3;
+  background-color: #fff;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background: url(/Assets/Images/nightroad.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+main {
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 48px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+h3 {
+font-size: 24px;
+margin-bottom: 10px;
+color: red;
+text-align: center;
+font-family: 'Playfair Display', serif;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+
+}
+
+.tagline {
+  margin: 0;
+  position: relative;
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  color: white;
+  font-size: 24px;
+}
+
+/*Container element that contains three box elements, 2 for articles, 1 for video*/ 
+
+.pagetitlecontainer {
+  height: 110px;
+  width: 100%;
+}
+
+.mediaboxescontainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: auto;
+  align-content: flex-end;
+  height: 100%;
+  background-color: black;
+  font-family: 'Playfair Display', serif;
+}
+
+.video-container {
+justify-content: space-evenly;
+position: relative;
+margin-top: px;
+}
+
+.box {
+  width: 575px;
+  height: 350px;
+  background-image: url(/Assets/Images/rain-3915684_1920.jpg);
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  justify-content: space-evenly;
+}
+
+.box:hover { /*The :hover pseudo-class is used to add a transition effect when the user hovers over the box.*/
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.box:before { /*The :before pseudo-element is used to add a gradient background to the box. 
+  When the user hovers over the box, the gradient background is scaled up to create an animated effect.*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #89878b, #ffffff);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover:before {
+  transform: scale(1.5);
+}
+
+.articletitle {
+  color: black;
+}
+article {
+  overflow: auto;
+  max-height: 350px;
+  padding: 20px;
+}
+
+.article {
+  margin: 0;
+  text-indent: .5in;
+  font-weight: bold;
+  text-decoration-color: black;
+  overflow: auto;
+  text-align: left;
+  font-size: 14px;
+}
+
+/*Beginning of text-animation code*/
+
+.statscontainer {
+  display: flex;
+  flex-direction: column;
+  top: 25% !important;
+}
+
+.statscontainer.animated {
+  animation-name: repeatAnimation;
+  animation-duration: 180s;
+  animation-iteration-count: infinite;
+}
+
+.animated-text {
+  position: relative;
+}
+
+.animated-text p {
+  position: absolute;
+  opacity: 0;
+  animation: fade-in-out 8s ease-in-out;
+  animation-fill-mode: forwards;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 20px
+  
+}
+
+.animated-text {
+  text-align: center;
+  top: 25% !important;
+}
+
+.number {
+  position: absolute;
+  opacity: 0;
+  font-size: 96px !important;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bolder;
+  text-align: center !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  color: red !important;
+}
+
+.animated-text p:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.animated-text p:nth-child(3) { /*Number*/
+  animation-delay: 10s;
+}
+
+.animated-text p:nth-child(4) { 
+  animation-delay: 13s;
+}
+
+.animated-text p:nth-child(5) { /*Number*/
+  animation-delay: 20s;
+}
+
+.animated-text p:nth-child(6) { 
+  animation-delay: 23s;
+}
+
+.animated-text p:nth-child(7) { /*Number*/
+  animation-delay: 30s;
+}
+
+.animated-text p:nth-child(8) { 
+  animation-delay: 33s;
+}
+
+.animated-text p:nth-child(9) {
+  animation-delay: 43s;
+}
+
+.animated-text p:nth-child(10) { /*Number*/
+  animation-delay: 53s;
+}
+
+.animated-text p:nth-child(11) {
+  animation-delay: 56s;
+}
+
+.animated-text p:nth-child(12) { /*Number*/
+  animation-delay: 66s;
+}
+
+.animated-text p:nth-child(13) {
+  animation-delay: 69s;
+}
+
+.animated-text p:nth-child(14) { /*Number*/
+  animation-delay: 79s;
+}
+
+.animated-text p:nth-child(15) {
+  animation-delay: 82s;
+}
+
+.animated-text p:nth-child(16) {
+  animation-delay: 92s;
+}
+
+.animated-text p:nth-child(17) { /*Number*/
+  animation-delay: 102s;
+}
+
+.animated-text p:nth-child(18) {
+  animation-delay: 105s;
+}
+
+.animated-text p:nth-child(19) { /*Number*/
+  animation-delay: 115s;
+}
+
+.animated-text p:nth-child(20) {
+  animation-delay: 118s;
+}
+
+.animated-text p:nth-child(21) {
+  animation-delay: 128s;
+}
+
+.animated-text p:nth-child(22) {
+  animation-delay: 138s;
+}
+
+.animated-text p:nth-child(23) {
+  animation-delay: 148s;
+}
+
+.animated-text p:nth-child(24) { /*Number*/
+  animation-delay: 151s;
+}
+
+.animated-text p:nth-child(25) {
+  animation-delay: 154s;
+}
+
+.animated-text p:nth-child(26) { /*Number*/
+  animation-delay: 164s;
+}
+
+.animated-text p:nth-child(27) {
+  animation-delay: 167s;
+}
+
+.animated-text p:nth-last-child(28) {
+  animation-delay: 177s;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    
+    
+  }
+  25% {
+    opacity: 0.5;
+    visibility: visible;
+    color: #000;
+    
+    
+  }
+
+  50% {
+    opacity: 1;
+    visibility: visible;
+    color: #000;
+    
+    
+  }
+
+  75% {
+    opacity: 0.5;
+    visibility: visible;
+    color: #000;
+    
+
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes repeatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+/*End of text-animation code*/
+
+section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration:wavy;
+}
+
+/* Masthead */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: black;
+}
+
+.logo {
+    background-color: red;
+    background-position: left;
+    width: 50px;
+    height: 35px;
+    text-align: left;
+    font-size: 10px;
+    font-weight: bolder;
+    padding: 10px;
+  }
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-right: 90px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    width: 400px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button[type="submit"] {
+    padding: 13px;
+    border: none;
+    color: #fff;
+    background-image: url('/Assets/Images/Search-icon.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: cyan;
+    cursor: pointer;
+    filter: invert(1);
+  }
+  
+  .search-bar button[type="submit"]:hover {
+    background-color: cyan;
+    background-image: url('/Assets/Images/Eye.jpg');
+    background-size: contain;
+    color:#fff;
+    filter:hue-rotate();
+  }
+
+nav2 a {
+  display: block;
+  padding: 0px;
+  text-decoration: none;
+  color: white;
+}
+
+nav2 a img {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    filter: invert(1);
+    position:bottom;
+  }
+/*End of header, navbars, search field, and masthead*/
+
+
+/*Footer code added here*/
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color:black;
+    margin-top: auto;
+  }
+  
+.copyright {
+    display: block;
+    margin: 0px;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    padding: 10px;
+  }
+  
+footer a {
+    color: white;
+  }
+  
+footer a:hover {
+    text-decoration: wavy;
+  }
+
+footer nav ul {
+    display: flex;
+}
+
+footer nav li {
+    margin-right: 90px;
+}
+
+footer nav li:last-child {
+    margin-right: 0;
+}
+
+footer .logo {
+    background-color: red;
+    background-position: left;
+    width: 50px;
+    height: 35px;
+    text-align: left;
+    font-size: 10px;
+    font-weight: bolder;
+    padding: 10px;
+  }
+
+  .flex{
+    display: flex;
+    flex-direction: column;
+  }
+  /*End of footer*/
+
+
+  /*Beginning of Carousel Styling*/
+  .carouseltagline {
+    color: white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+  }
+
+  .carousel {
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    position: relative;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+  }
+  
+  .carousel-caption h3 {
+    margin-top: 0;
+  }
+  
+  .carousel-control-prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: white;
+    font-size: 8px;
+    line-height: 50px;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M5.5 0l-3 3h2.75v1h-2.75l3 3 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.5;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M2.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 3-3h-2.75v-1h2.75l-3-3z'/%3E%3C/svg%3E");
+  }
+  /*End of carousel coding*/
